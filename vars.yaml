@@ -13,4 +13,8 @@
       msg: "course {{ COURSE }} and duration is {{ duration }} and trainer is {{ trainer }}"
 
 
-  
+  - name: print1
+    vars:
+      COURSE: ansible
+    ansible.builtin.debug:
+      msg: "course {{ COURSE }} and duration is {{ duration }} and trainer is {{ trainer }}"

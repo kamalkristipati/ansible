@@ -1,6 +1,6 @@
 - name: playbook to test datatypes
   hosts: local
-  connections: local 
+  connection: local 
   vars:
     course_name: "Devops with AWS"
     duration: 120 

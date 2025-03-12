@@ -1,0 +1,5 @@
+- name: ping 
+  hosts: web
+  tasks: #tasls equal to module=plugin
+  - name: ping the server
+    ansible.builtin.ping:

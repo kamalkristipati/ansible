@@ -7,12 +7,12 @@
   - name: print if number greter than 10
     ansible.builtin.debug:
       msg: "the given number {{ n1 }} is greter than 10"
-    when: my_number > 10
-    
+    when: n1 > 10
+
   - name: print if number not  lessthan or equal  10
     ansible.builtin.debug:
       msg: "the given number {{ n1 }} is lessthan or equal to 10"
-    when: my_number <= 10
+    when: n1 <= 10
 
 
 

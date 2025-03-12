@@ -4,5 +4,5 @@
   tasks:
   - name: play1 and task1
     ansible.builtin.debug:
-    msg: "Hello from play1 and task1"
+      msg: "Hello from play1 and task1"
 

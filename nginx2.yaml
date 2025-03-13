@@ -1,0 +1,16 @@
+- name: install nginx
+  hosts: web
+  become: yes
+  tasks:
+    name:install niginx
+    ansible.builtin.package:
+      name:nginx
+      state:present
+    name: start nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
+    name: print facts
+    ansible.builtin.debug:
+      msg: "facts ate {{ custom_facts }}"

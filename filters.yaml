@@ -4,5 +4,5 @@
   tasks:
   - name: to print undefined variables
     ansible.builtin.debug:
-      msg: "Hell {{ person | default('kamal') }}"
+      msg: "Hello {{ person | default('kamal') }}"
       

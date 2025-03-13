@@ -1,0 +1,8 @@
+- name: filters
+  hosts: web
+  become: yes
+  tasks:
+  - name: to print undefined variables
+    ansible.builtin.debug:
+      msg: "Hell {{ person }}"
+      

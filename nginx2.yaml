@@ -11,6 +11,6 @@
        name: nginx
        state: started
        enabled: yes
-    - name: print facts
+    - name: Print all gathered facts
       ansible.builtin.debug:
-        msg: "facts ate {{ custom_fact }}"
+        var: ansible_facts  

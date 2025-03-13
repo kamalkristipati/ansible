@@ -23,3 +23,12 @@
         trainer: sivakumar
     ansible.builtin.debug:
       msg: "cource is {{ cource | dict2items }}"
+
+  - name: to convert list into map
+    vars:
+      cource:
+        name: {'key': 'name', 'value': 'devops with aws'}
+        duration: {'key': 'duration', 'value': '10hrs'}
+        tariner: {'key': 'trainer', 'value': 'sivakumar'}
+    ansible.builtin.debug:
+      msg: "cource is {{ cource | items2dict }}"

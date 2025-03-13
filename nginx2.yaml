@@ -13,4 +13,4 @@
        enabled: yes
     - name: print facts
       ansible.builtin.debug:
-        msg: "facts ate {{ custom_facts }}"
+        msg: "facts ate {{ custom_fact }}"

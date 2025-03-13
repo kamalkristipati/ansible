@@ -22,4 +22,4 @@
         duration: 10hrs
         trainer: sivakumar
     ansible.builtin.debug:
-      msg: "cource is {{ cource }}"
+      msg: "cource is {{ cource | dict2items }}"

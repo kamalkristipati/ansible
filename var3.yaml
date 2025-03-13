@@ -8,3 +8,8 @@
       person1: kamalreddy
     ansible.builtin.debug:
       msg: "hello {{ person1 }}"
+  - name: to print list of fruits
+    vars:
+      fruits: "apple,banana,mango"
+    ansible.builtin.debug:
+      msg: "fruits are {{ fruits | split(',') }}"

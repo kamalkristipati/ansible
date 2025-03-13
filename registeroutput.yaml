@@ -1,0 +1,10 @@
+- name: to register output
+  hosts: web 
+  tasks:
+  - name: to list ls command
+    ansible.builtin.command: ls -latr
+    register: output
+
+  - name: to register ls command output
+    ansible.builtin.debug:
+      msg: "ls command result is {{ output }}"

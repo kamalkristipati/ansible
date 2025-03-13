@@ -2,7 +2,7 @@
   hosts: web 
   tasks:
   - name: to list ls command
-    ansible.builtin.command: ls -ltra
+    ansible.builtin.command: ls -ltr
     register: output
 
   - name: to register ls command output

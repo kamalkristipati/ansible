@@ -26,9 +26,9 @@
 
   - name: to convert list into map
     vars:
-      cource:
-        name: {'key': "name", 'value': "evops with aws"}
-        duration: {'key': "duration", 'value': "10hrs"}
-        tariner: {'key': "trainer", 'value': "sivakumar"}
+      course:
+      - name: {'key': "name", 'value': "evops with aws"}
+      - duration: {'key': "duration", 'value': "10hrs"}
+      - tariner: {'key': "trainer", 'value': "sivakumar"}
     ansible.builtin.debug:
-      msg: "cource is {{ cource | items2dict }}"
+      msg: "course is {{ course | items2dict }}"

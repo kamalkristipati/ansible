@@ -1,8 +1,10 @@
 - name: variable
   hosts: web
-  tasks:
   vars:
    person: kamal
+  tasks:
   - name: to print variables
+    vars:
+      person1: kamal
     ansible.builtin.debug:
-      msg: "hello {{ person }}"
+      msg: "hello {{ person1 }}"

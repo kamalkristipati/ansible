@@ -5,6 +5,6 @@
   tasks:
   - name: to print variables
     vars:
-      person1: kamal
+      person1: kamalreddy
     ansible.builtin.debug:
       msg: "hello {{ person1 }}"

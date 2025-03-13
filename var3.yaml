@@ -14,3 +14,12 @@
     ansible.builtin.debug:
       # msg: "fruits are {{ fruits | split(',') }}"
       msg: "fruits are {{ fruits }}"
+
+  - name: to convert map into list
+    vars:
+      cource:
+        name: "devops with aws"
+        duration: 10hrs
+        trainer: sivakumar
+    ansible.builtin.debug:
+      msg: "cource is {{ cource }}"

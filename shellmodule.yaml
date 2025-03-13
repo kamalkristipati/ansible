@@ -1,0 +1,5 @@
+- name: to run command from command module
+  hosts: web
+  tasks:
+  - name: command module
+    ansible.builtin.shell: ls -latr >> /tmp/ls.txt

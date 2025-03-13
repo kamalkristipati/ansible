@@ -32,3 +32,9 @@
       - {'key': 'duration', 'value': '10hrs'}
     ansible.builtin.debug:
       msg: "cource is {{ cource | items2dict }}"
+
+  - name: to convert into lower
+    vars:
+      name: "K KAMAlakarREDDY"
+    ansible.builtin.debug:
+      msg: "name is {{ name | lower }}"
